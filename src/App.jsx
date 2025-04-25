@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './App.scss';
 import Btn from './assets/components/Btn/Btn';
 import GreenLabel from './assets/components/GreenLabel/GreenLabel';
@@ -16,8 +16,19 @@ function App() {
     }, 500);
   };
 
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+    if (click === 1) {
+      audioRef.current.play();
+    }
+  }, [click]);
+
+  audioRef.current.volume = 1;
+
   return (
     <div className="App">
+      <audio ref={audioRef} src="/sounds/mainSound.ogg" loop autoPlay/>
       <div className="App_title transform free_img">
         <img src="/img/title.webp" alt="" />
       </div>

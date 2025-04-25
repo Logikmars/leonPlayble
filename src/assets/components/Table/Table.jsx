@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './Table.scss';
 
 export default ({ click, showLastScreen }) => {
@@ -7,12 +7,17 @@ export default ({ click, showLastScreen }) => {
     const [newClick3, setnewClick3] = useState(false);
     const [newClick4, setnewClick4] = useState(false);
 
+    const sound1 = useRef(null);
+    const sound2 = useRef(null);
+    const sound3 = useRef(null);
+
     useEffect(() => {
         console.log('click:', click);
 
         if (click === 1) {
             const timer1 = setTimeout(() => {
                 setnewClick(true);
+                sound1.current?.play();
             }, 300);
 
             return () => clearTimeout(timer1);
@@ -20,6 +25,7 @@ export default ({ click, showLastScreen }) => {
             const timer2 = setTimeout(() => {
                 setnewClick(false);
                 setnewClick2(true);
+                sound2.current?.play();
             }, 300);
 
             return () => clearTimeout(timer2);
@@ -31,6 +37,7 @@ export default ({ click, showLastScreen }) => {
                 setTimeout(() => {
                     setnewClick3(false);
                     setnewClick4(true);
+                    sound3.current?.play();
                     setTimeout(() => {
                         showLastScreen(true);
                     }, 300);
@@ -47,6 +54,9 @@ export default ({ click, showLastScreen }) => {
 
     return (
         <div className="Table">
+                <audio ref={sound1} src="/sounds/winCoin.ogg" />
+                <audio ref={sound2} src="/sounds/winCoin.ogg" />
+                <audio ref={sound3} src="/sounds/lastwin.ogg" />
             <img src="/img/table.webp" alt="" />
             <div className="Table_decor free_img">
                 <div
