@@ -44,6 +44,9 @@ function App() {
         <div className="App_title transform free_img">
           <img src="/img/title.webp" alt="" />
         </div>
+        <div className='App_lastScreen_decor_leftCoin free_img'>
+          <img src="/img/coinsLeft.webp" alt="" />
+        </div>
         <div className='App_lastScreen_title free_img'>
           Tebrikler! <br></br>
           Kazandınız!
@@ -55,6 +58,9 @@ function App() {
             ve 200 free spin kazandınız!
             <Btn title="BONUS Al" />
           </div>
+        </div>
+        <div className='App_lastScreen_decor_rightCoin free_img'>
+          <img src="/img/coinsRight.webp" alt="" />
         </div>
       </div>
       <div className='App_decorFlame transform free_img'>

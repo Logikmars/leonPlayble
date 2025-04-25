@@ -108,12 +108,36 @@
             background-color: #6B004A;
             border-radius: 10px;
             min-height: 20vh;
+            display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             gap: 20px;
             font-family: 'Arial black';
+            font-size: 37px;
             text-transform: uppercase;
             border: 3px solid #F6BD25;
             box-shadow: 0px 100px 50px #6B004A;
+            z-index: 2;
+            &_wrapper{
+                z-index: 9999;
+            }
+        }
+        &_decor_leftCoin{
+            bottom: 30vh;
+            right: 30vw;
+            img{
+                width: 80vw;
+                rotate: -30deg;
+            }
+        }
+        &_decor_rightCoin{
+            top: 45vh;
+            left: 35vw;
+            z-index: 1;
+            img{
+                rotate: -15deg;
+                width: 130vw;
+            }
         }
     }
 }
