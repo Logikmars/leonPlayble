@@ -31,28 +31,31 @@ function App() {
         <GreenLabel />
       </div>
       <div className='App_table transform free_img' style={showLastScreen ? { transform: 'translateY(-100vh)' } : {}}>
-        <Table click={click} showLastScreen={handleShowLastScreen}/>
+        <Table click={click} showLastScreen={handleShowLastScreen} />
       </div>
       <div className='App_btn transform free_img' style={showLastScreen ? { transform: 'translateY(100vh)' } : {}}>
-        <Btn onclick={() => setclick(click + 1)} click={click} title="Çevir"/>
+        <Btn onclick={() => setclick(click + 1)} click={click} title="Çevir" />
       </div>
       <div className='App_decorBallLeft transform free_img' style={showLastScreen ? { transform: 'translateX(-100vw)' } : {}}>
         <img src="/img/leftJackpot.webp" alt="" />
       </div>
 
       <div className={`App_lastScreen free_img opacity ${showLastScreen ? 'App_lastScreen_show' : ''}`}>
-          <div className="App_title transform free_img">
-            <img src="/img/title.webp" alt="" />
-          </div>
-          <div className='App_lastScreen_title free_img'>
-            Tebrikler! <br></br>
-            Kazandınız!
-          </div>
-          <div className='App_lastScreen_description free_img'>
+        <div className="App_title transform free_img">
+          <img src="/img/title.webp" alt="" />
+        </div>
+        <div className='App_lastScreen_title free_img'>
+          Tebrikler! <br></br>
+          Kazandınız!
+        </div>
+        <div className='App_lastScreen_description_wrapper free_img'>
+          <div className='App_lastScreen_description'>
+
             60.000 TL bonus <br></br>
             ve 200 free spin kazandınız!
-            <Btn title="BONUS Al"/>
+            <Btn title="BONUS Al" />
           </div>
+        </div>
       </div>
       <div className='App_decorFlame transform free_img'>
         <img src="/img/flame.webp" alt="" />
