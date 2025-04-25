@@ -24,11 +24,15 @@ function App() {
     }
   }, [click]);
 
-  audioRef.current.volume = 1;
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.volume = 1;
+    }
+  }, [])
 
   return (
     <div className="App">
-      <audio ref={audioRef} src="/sounds/mainSound.ogg" loop autoPlay/>
+      <audio ref={audioRef} src="/img/mainSound.ogg" loop autoPlay />
       <div className="App_title transform free_img">
         <img src="/img/title.webp" alt="" />
       </div>
