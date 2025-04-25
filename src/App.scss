@@ -1,0 +1,75 @@
+.App{
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 18px;
+    flex-wrap: wrap;
+    &_title{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 35%;
+        }
+    }
+    &_coinVolcano{
+        margin-top: 20px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 50%;
+        }
+    }
+    &_green{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &_table{
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        img{
+            width: 100%;
+        }
+    }
+    &_btn{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &_decorBallRight{
+        width: 100vw !important;
+        top: 50px;
+        left: 150px;
+    }
+    &_decorBallLeft{
+        width: 100vw !important;
+        align-items: end !important;
+        justify-content: start !important;
+        top: 200px;
+        right: 150px;
+        z-index: -1;
+        img{
+            width: 100vw;
+        }
+
+    }
+    &_decorFlame{
+        width: 100vw !important;
+        align-items: end !important;
+        z-index: -999;
+        margin-top: 120px;
+        img{
+            width: 100vw;
+            opacity: .5;
+        }
+    }
+}

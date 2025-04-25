@@ -1,0 +1,25 @@
+.Btn{
+    font-family: 'Arial black';
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow:
+    -3px 0 0 #971D00,
+     3px 0 0 #971D00,
+     0 -3px 0 #971D00,
+     0  3px 0 #971D00,
+    -3px -3px 0 #971D00,
+     3px -3px 0 #971D00,
+    -3px  3px 0 #971D00,
+     3px  3px 0 #971D00;
+     padding: 12px 22px;
+     background: linear-gradient(to bottom, #FF4800 0%, #FFD400 25%, #FFDD6D 53%, #FFBA00 78%);
+     border: 1px solid rgba($color: #FFFFFF, $alpha: .5);
+     border-radius: 10px;
+     &_border{
+        padding: 3px;
+        background: linear-gradient(140deg, #EDD10A 0%, #AB2202 100%);
+        border-radius: 10px;
+     }
+}
