@@ -80,7 +80,7 @@
     }
 
     &_lastScreen {
-        display: none !important;
+        opacity: 0;
         min-width: 100vw;
         max-width: 100vw;
         min-height: 100vh;
@@ -88,7 +88,7 @@
         background-color: rgba($color: #000000, $alpha: .4);
 
         &_show {
-            display: flex !important;
+            opacity: 1;
         }
 
         &_title {

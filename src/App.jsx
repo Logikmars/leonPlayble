@@ -39,28 +39,29 @@ function App() {
       <div className='App_decorBallLeft transform free_img' style={showLastScreen ? { transform: 'translateX(-100vw)' } : {}}>
         <img src="/img/leftJackpot.webp" alt="" />
       </div>
-
-      <div className={`App_lastScreen free_img opacity ${showLastScreen ? 'App_lastScreen_show' : ''}`}>
-        <div className="App_title transform free_img">
-          <img src="/img/title.webp" alt="" />
-        </div>
-        <div className='App_lastScreen_decor_leftCoin free_img'>
-          <img src="/img/coinsLeft.webp" alt="" />
-        </div>
-        <div className='App_lastScreen_title free_img'>
-          Tebrikler! <br></br>
-          Kazandınız!
-        </div>
-        <div className='App_lastScreen_description_wrapper free_img'>
-          <div className='App_lastScreen_description'>
-
-            60.000 TL bonus <br></br>
-            ve 200 free spin kazandınız!
-            <Btn title="BONUS Al" />
+      <div className='App_lastScreen_wrapper free_img'>
+        <div className={`App_lastScreen free_img opacity ${showLastScreen ? 'App_lastScreen_show' : ''}`}>
+          <div className="App_title transform free_img">
+            <img src="/img/title.webp" alt="" />
           </div>
-        </div>
-        <div className='App_lastScreen_decor_rightCoin free_img'>
-          <img src="/img/coinsRight.webp" alt="" />
+          <div className='App_lastScreen_decor_leftCoin free_img'>
+            <img src="/img/coinsLeft.webp" alt="" />
+          </div>
+          <div className='App_lastScreen_title free_img'>
+            Tebrikler! <br></br>
+            Kazandınız!
+          </div>
+          <div className='App_lastScreen_description_wrapper free_img'>
+            <div className='App_lastScreen_description'>
+
+              60.000 TL bonus <br></br>
+              ve 200 free spin kazandınız!
+              <Btn title="BONUS Al" />
+            </div>
+          </div>
+          <div className='App_lastScreen_decor_rightCoin free_img'>
+            <img src="/img/coinsRight.webp" alt="" />
+          </div>
         </div>
       </div>
       <div className='App_decorFlame transform free_img'>
