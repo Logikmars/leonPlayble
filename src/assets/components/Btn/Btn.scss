@@ -1,18 +1,10 @@
 .Btn{
     font-family: 'Arial black';
-    width: 20vw;
+    min-width: 40vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-shadow:
-    -3px 0 0 #971D00,
-     3px 0 0 #971D00,
-     0 -3px 0 #971D00,
-     0  3px 0 #971D00,
-    -3px -3px 0 #971D00,
-     3px -3px 0 #971D00,
-    -3px  3px 0 #971D00,
-     3px  3px 0 #971D00;
+    text-shadow: 2.00px 0.00px #992200, 1.85px 0.77px #992200, 1.41px 1.41px #992200, 0.77px 1.85px #992200, 0.00px 2.00px #992200, -0.77px 1.85px #992200, -1.41px 1.41px #992200, -1.85px 0.77px #992200, -2.00px 0.00px #992200, -1.85px -0.77px #992200, -1.41px -1.41px #992200, -0.77px -1.85px #992200, -0.00px -2.00px #992200, 0.77px -1.85px #992200, 1.41px -1.41px #992200, 1.85px -0.77px #992200, 3.00px 1.00px #992200, 2.85px 1.77px #992200, 2.41px 2.41px #992200, 1.77px 2.85px #992200, 1.00px 3.00px #992200, 0.23px 2.85px #992200, -0.41px 2.41px #992200, -0.85px 1.77px #992200, -1.00px 1.00px #992200, -0.85px 0.23px #992200, -0.41px -0.41px #992200, 0.23px -0.85px #992200, 1.00px -1.00px #992200, 1.77px -0.85px #992200, 2.41px -0.41px #992200, 2.85px 0.23px #992200;
      padding: 12px 22px;
      background: linear-gradient(to bottom, #FF4800 0%, #FFD400 25%, #FFDD6D 53%, #FFBA00 78%);
      border: 1px solid rgba($color: #FFFFFF, $alpha: .5);
