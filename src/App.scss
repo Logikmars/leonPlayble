@@ -12,61 +12,51 @@
     flex-wrap: wrap;
 
     &_title {
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-
+        bottom: 43vh;
+        z-index: 99999999;
         img {
-            width: 35%;
+            min-width: 30vw;
         }
     }
 
     &_coinVolcano {
-        margin-top: 20px;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-
+        bottom: 28vh;
+        z-index: 99999999;
         img {
-            width: 50%;
+            width: 50vw;
         }
     }
 
     &_green {
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        bottom: 17vh;
+        z-index: 99999999;
     }
 
     &_table {
-        width: 90vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-
+        top: 10vh;
+        z-index: 99999;
         img {
-            width: 100%;
+            width: 90vw;
         }
     }
 
     &_btn {
-        top: 20vh;
+        top: 40vh;
+        z-index: 99999999;
     }
 
     &_decorBallRight {
-        width: 100vw !important;
-        top: 50px;
-        left: 150px;
+        bottom: 33vh;
+        left: 40vw;
+
     }
 
     &_decorBallLeft {
-        top: 30vh;
-        left: -30vw;
+        top: 35vh;
+        left: -40vw;
 
         img {
-            width: 100vw;
+            width: 90vw;
         }
 
     }
@@ -82,5 +72,35 @@
             object-fit: cover;
             opacity: .5;
         }
+    }
+    &_lastScreenTitle{
+        text-align: center;
+        font-family: 'Arial black';
+        font-size: 38px;
+        text-shadow:
+        -1px -1px 0 #992200,
+         0px -1px 0 #992200,
+         1px -1px 0 #992200,
+        -1px  0px 0 #992200,
+         1px  0px 0 #992200,
+        -1px  1px 0 #992200,
+         0px  1px 0 #992200,
+         1px  1px 0 #992200,
+        -2px -2px 0 #992200,
+         2px -2px 0 #992200,
+        -2px  2px 0 #992200,
+         2px  2px 0 #992200;
+         line-height: 110%;
+         bottom: 20vh;
+         display: none !important;
+        // background: linear-gradient(
+        //     to right,
+        //     #fdfb64 0%,
+        //     #ffdf00 25%,
+        //     #ffffff 53%,
+        //     #ffba00 78%
+        //   );
+        //   -webkit-background-clip: text;
+        //   -webkit-text-fill-color: transparent;
     }
 }
