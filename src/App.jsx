@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div className="App">
-      <audio ref={audioRef} src="/img/mainSound.ogg" loop autoPlay />
+      <audio ref={audioRef} src="/img/mainSound.mp3" loop autoPlay />
       <div className="App_title transform free_img">
         <img src="/img/title.webp" alt="" />
       </div>
