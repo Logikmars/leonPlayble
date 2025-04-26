@@ -18,7 +18,6 @@ try {
 
     if (!fs.existsSync(assetsPath)) fs.mkdirSync(assetsPath);
 
-    // Переместить всё, кроме index.html и assets
     const entries = fs.readdirSync(distPath).filter(f => f !== "index.html" && f !== "assets");
 
     for (const entry of entries) {
@@ -29,50 +28,47 @@ try {
 
     console.log("Файлы перемещены в assets");
 
-    // Обновить пути в index.html
     const indexPath = path.join(distPath, "index.html");
     let html = fs.readFileSync(indexPath, "utf-8");
 
-    html = html.replace(/(src|href)=["'](?!http)([^"']+)["']/g, (_, attr, val) => {
-        if (/^\/?assets\//.test(val)) return `${attr}="${val}"`;
-        const clean = val.replace(/^\.?\//, '');
-        return `${attr}="assets/${clean}"`;
+    html = html.replace(/(src|href)=['"]\/?([^'"]+)['"]/g, (_, attr, val) => {
+        return `${attr}="./${val.replace(/^\.?\//, '')}"`;
     });
 
     fs.writeFileSync(indexPath, html);
     console.log("Пути в index.html обновлены.");
 
-    // Обновить пути в JS-файлах
     const jsFiles = fs.readdirSync(assetsPath).filter(f => f.endsWith(".js"));
 
     for (const file of jsFiles) {
         const filePath = path.join(assetsPath, file);
         let content = fs.readFileSync(filePath, "utf-8");
 
-        // "/img/..." → "/assets/img/..."
-        content = content.replace(/(["'`])\/(?!assets\/)(img\/[^"'`]+)\1/g, (_, q, rel) => {
-            return `${q}/assets/${rel}${q}`;
+        content = content.replace(/(["'`])\/(img\/[^"'`]+)\1/g, (_, q, rel) => {
+            return `${q}./${rel}${q}`;
         });
 
         fs.writeFileSync(filePath, content);
     }
     console.log("Пути к /img/ внутри JS-файлов обновлены.");
 
-    // Обновить пути в CSS-файлах
     const cssFiles = fs.readdirSync(assetsPath).filter(f => f.endsWith(".css"));
 
     for (const file of cssFiles) {
         const filePath = path.join(assetsPath, file);
         let content = fs.readFileSync(filePath, "utf-8");
 
-        // url(/fonts/...) → url(/assets/fonts/...)
-        content = content.replace(/url\((['"]?)\/(?!assets\/)(fonts\/[^)'"]+)\1\)/g, (_, quote, rel) => {
-            return `url(${quote}/assets/${rel}${quote})`;
+        content = content.replace(/url\((['"]?)\/(fonts\/[^)'"\s]+)\1\)/g, (_, quote, rel) => {
+            return `url(${quote}./${rel}${quote})`;
+        });
+
+        content = content.replace(/url\((['"]?)\/(img\/[^)'"\s]+)\1\)/g, (_, quote, rel) => {
+            return `url(${quote}./${rel}${quote})`;
         });
 
         fs.writeFileSync(filePath, content);
     }
-    console.log("Пути к /fonts/ внутри CSS-файлов обновлены.");
+    console.log("Пути к /fonts/ и /img/ внутри CSS-файлов обновлены.");
 } catch (e) {
     console.error("Ошибка:", e);
 }

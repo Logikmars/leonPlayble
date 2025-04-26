@@ -71,7 +71,7 @@ function App() {
 
               60.000 TL bonus <br></br>
               ve 200 free spin kazandınız!
-              <Btn title="BONUS Al" />
+              <Btn title="BONUS Al" onclick={() => { FbPlayableAd.onCTAClick() }} />
             </div>
           </div>
           <div className='App_lastScreen_decor_rightCoin free_img'>
