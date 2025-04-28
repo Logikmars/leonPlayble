@@ -18,6 +18,12 @@
                 transform: translateY(100px);
                 opacity: 0;
             }
+            @media (orientation: landscape) {
+                top: 1vw;
+                img{
+                    min-width: 10vw;
+                }
+            }
         }
         &_coin1{
             bottom: 17vw;
@@ -25,22 +31,57 @@
             img{
                 min-width: 35vw !important;
             }
+            @media (orientation: landscape) {
+                bottom: 4vw;
+                right: 51.7vw;
+                img{
+                    min-width: 8vw !important;
+                }
+            }
         }
         &_coin2{
             bottom: 17vw;
             right: 44.5vw;
+            @media (orientation: landscape) {
+                bottom: 4vw;
+                right: 44.9vw;
+                img{
+                    min-width: 6.5vw !important;
+                }
+            }
         }
         &_coin3{
             bottom: 17vw;
             right: 17vw;
+            @media (orientation: landscape) {
+                bottom: 4vw;
+                right: 38.2vw;
+                img{
+                    min-width: 6.5vw !important;
+                }
+            }
         }
         &_coin4{
             top: 5vw;
             right: 72vw;
+            @media (orientation: landscape) {
+                top: 1.2vw;
+                right: 51.7vw;
+                img{
+                    min-width: 6.5vw !important;
+                }
+            }
         }
         &_coin5{
             top: 5vw;
             right: 17vw;
+            @media (orientation: landscape) {
+                top: 1.2vw;
+                right: 38.2vw;
+                img{
+                    min-width: 6.5vw !important;
+                }
+            }
         }
         &_coin6{
             top: 5vw;
@@ -54,6 +95,13 @@
             &_show{
                 transform: translateY(0px);
                 opacity: 1;
+            }
+            @media (orientation: landscape) {
+                top: 1.2vw;
+                right: 52vw;
+                img{
+                    min-width: 9vw !important;
+                }
             }
         }
         &_coin7{
@@ -69,6 +117,13 @@
                 transform: translateY(0px);
                 opacity: 1;
             }
+            @media (orientation: landscape) {
+                top: 1.2vw;
+                right: 45vw;
+                img{
+                    min-width: 9vw !important;
+                }
+            }
         }
         &_coin8{
             top: 5vw;
@@ -83,10 +138,24 @@
                 transform: translateY(0px);
                 opacity: 1;
             }
+            @media (orientation: landscape) {
+                top: 1.2vw;
+                right: 38vw;
+                img{
+                    min-width: 9vw !important;
+                }
+            }
         }
         &_coin9{
             bottom: 17vw;
             right: 44.5vw;
+            @media (orientation: landscape) {
+                bottom: 4vw;
+                right: 45vw;
+                img{
+                    min-width: 6.5vw !important;
+                }
+            }
         }
     }
 }
