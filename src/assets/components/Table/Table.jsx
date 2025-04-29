@@ -7,6 +7,7 @@ export default ({ click, showLastScreen }) => {
     const [newClick3, setnewClick3] = useState(false);
     const [newClick4, setnewClick4] = useState(false);
 
+
     const sound1 = useRef(null);
     const sound2 = useRef(null);
     const sound3 = useRef(null);
@@ -57,8 +58,10 @@ export default ({ click, showLastScreen }) => {
             <audio ref={sound1} src="/img/winCoin.ogg" />
             <audio ref={sound2} src="/img/winCoin.ogg" />
             <audio ref={sound3} src="/img/lastwin.ogg" />
-            <img src="/img/table.webp" alt="" />
             <div className="Table_decor free_img">
+                <div className='Table_decor_table free_img'>
+                    <img src="/img/table.webp" alt="" />
+                </div>
                 <div
                     className={`Table_decor_mount free_img ${click ? 'Table_decor_mount_hide' : ''}`}
                 >

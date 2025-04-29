@@ -18,9 +18,11 @@
         img {
             min-width: 30vw;
         }
+
         @media (orientation: landscape) {
             width: 90vw;
-            img{
+
+            img {
                 min-width: 10vw;
             }
         }
@@ -29,13 +31,16 @@
     &_coinVolcano {
         bottom: 28vh;
         z-index: 99999999;
+
         img {
             min-width: 50vw;
         }
+
         @media (orientation: landscape) {
             width: 90vw;
             bottom: 32vh;
-            img{
+
+            img {
                 min-width: 10vw;
             }
         }
@@ -44,32 +49,19 @@
     &_green {
         bottom: 17vh;
         z-index: 99999999;
+
         @media (orientation: landscape) {
             width: 90vw;
             bottom: 20vh;
         }
     }
 
-    &_table {
-        top: 10vh;
-        z-index: 99999;
 
-        img {
-            width: 90vw;
-            max-height: 50vh;
-            object-fit: contain;
-        }
-        @media (orientation: landscape) {
-            width: 90vw;
-            img{
-                max-height: 40vh;
-            }
-        }
-    }
 
     &_btn {
         top: 40vh;
         z-index: 99999999;
+
         @media (orientation: landscape) {
             width: 90vw;
             top: 45vh;
@@ -79,6 +71,7 @@
     &_decorBallRight {
         bottom: 33vh;
         left: 40vw;
+
         @media (orientation: landscape) {
             width: 90vw;
         }
@@ -91,9 +84,11 @@
         img {
             min-width: 90vw;
         }
+
         @media (orientation: landscape) {
             width: 90vw;
-            img{
+
+            img {
                 min-width: 30vw;
             }
         }
@@ -110,6 +105,7 @@
             object-fit: cover;
             opacity: .5;
         }
+
         @media (orientation: landscape) {
             width: 90vw;
         }
@@ -128,12 +124,14 @@
         }
 
         &_title {
+            z-index: 9;
             text-align: center;
             font-family: 'Arial black';
             font-size: 8vw;
             text-shadow: 5.00px 0.00px #992200, 4.62px 1.91px #992200, 3.54px 3.54px #992200, 1.91px 4.62px #992200, 0.00px 5.00px #992200, -1.91px 4.62px #992200, -3.54px 3.54px #992200, -4.62px 1.91px #992200, -5.00px 0.00px #992200, -4.62px -1.91px #992200, -3.54px -3.54px #992200, -1.91px -4.62px #992200, -0.00px -5.00px #992200, 1.91px -4.62px #992200, 3.54px -3.54px #992200, 4.62px -1.91px #992200, 8.00px 3.00px #992200, 7.62px 4.91px #992200, 6.54px 6.54px #992200, 4.91px 7.62px #992200, 3.00px 8.00px #992200, 1.09px 7.62px #992200, -0.54px 6.54px #992200, -1.62px 4.91px #992200, -2.00px 3.00px #992200, -1.62px 1.09px #992200, -0.54px -0.54px #992200, 1.09px -1.62px #992200, 3.00px -2.00px #992200, 4.91px -1.62px #992200, 6.54px -0.54px #992200, 7.62px 1.09px #992200;
             line-height: 110%;
-            bottom: 20vh;
+            bottom: 22vh;
+
             @media (orientation: landscape) {
                 font-size: 2vw;
                 z-index: 9999;
@@ -160,41 +158,51 @@
             border: 3px solid #F6BD25;
             box-shadow: 0px 100px 50px #6B004A;
             z-index: 2;
-            &_wrapper{
+
+            &_wrapper {
                 z-index: 9999;
                 top: 2vh;
             }
+
             @media (orientation: landscape) {
                 min-width: 80vw;
                 max-width: 80vw;
                 font-size: 2vw;
             }
         }
-        &_decor_leftCoin{
+
+        &_decor_leftCoin {
             bottom: 30vh;
             right: 30vw;
-            img{
+
+            img {
                 min-width: 80vw;
                 rotate: -30deg;
             }
+
             @media (orientation: landscape) {
                 right: 40vw;
-                img{
+
+                img {
                     min-width: 30vw;
                 }
             }
         }
-        &_decor_rightCoin{
+
+        &_decor_rightCoin {
             top: 45vh;
             left: 35vw;
             z-index: 1;
-            img{
+
+            img {
                 rotate: -15deg;
                 min-width: 130vw;
             }
+
             @media (orientation: landscape) {
                 left: 40vw;
-                img{
+
+                img {
                     min-width: 40vw;
                 }
             }

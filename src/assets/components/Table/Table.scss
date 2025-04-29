@@ -2,193 +2,263 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     &_decor {
+        position: relative;
+        z-index: 99;
+
+        &_table {
+            top: 10vh;
+
+            img {
+                width: 90vw;
+                max-height: 45vh;
+                object-fit: contain;
+            }
+
+            // @media (orientation: landscape) {
+            //     width: 90vw;
+
+            //     img {
+            //         max-height: 40vh;
+            //     }
+            // }
+        }
+
         &_mount {
-            top: 5vw;
-            right: 45vw;
+            top: 11vh;
+            // right: 45vw;
             transition: transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 1s ease;
             transform: translateY(0);
             opacity: 1;
-    
+
             img {
                 min-width: 40vw;
             }
-    
+
             &_hide {
                 transform: translateY(100px);
                 opacity: 0;
             }
+
             @media (orientation: landscape) {
                 top: 1vw;
-                img{
+
+                img {
                     min-width: 10vw;
                 }
             }
         }
-        &_coin1{
-            bottom: 17vw;
-            right: 72vw;
-            img{
+
+        &_coin1 {
+            left: -27.4vw;
+            top: calc(10vh - 20vw);
+            z-index: 9;
+
+            img {
                 min-width: 35vw !important;
+                max-height: 20vh;
+                object-fit: contain;
             }
+
             @media (orientation: landscape) {
-                bottom: 4vw;
-                right: 51.7vw;
-                img{
-                    min-width: 8vw !important;
-                }
+                top: 0vh;
+                left: -16vh;
+
+                // bottom: 4vw;
+                // right: 51.7vw;
+                // img{
+                //     min-width: 8vw !important;
+                // }
             }
         }
-        &_coin2{
-            bottom: 17vw;
-            right: 44.5vw;
+
+        &_coin2 {
+            top: calc(10vh - 20vw);
+
+            img {
+                min-width: 28vw !important;
+                max-height: 15vh;
+                object-fit: contain;
+            }
+
             @media (orientation: landscape) {
-                bottom: 4vw;
-                right: 44.9vw;
-                img{
-                    min-width: 6.5vw !important;
-                }
+                top: 0vh;
             }
         }
-        &_coin3{
-            bottom: 17vw;
-            right: 17vw;
+
+        &_coin3 {
+            top: calc(10vh - 20vw);
+            left: 27.4vw;
+
+            img {
+                min-width: 28vw !important;
+                max-height: 15vh;
+                object-fit: contain;
+            }
+
             @media (orientation: landscape) {
-                bottom: 4vw;
-                right: 38.2vw;
-                img{
-                    min-width: 6.5vw !important;
-                }
+                top: 0vh;
+                left: 16vh;
             }
         }
-        &_coin4{
-            top: 5vw;
-            right: 72vw;
+
+        &_coin4 {
+            top: 11vh;
+            left: -27.4vw;
+
+            img {
+                min-width: 28vw !important;
+                max-height: 15vh;
+                object-fit: contain;
+            }
+
             @media (orientation: landscape) {
-                top: 1.2vw;
-                right: 51.7vw;
-                img{
-                    min-width: 6.5vw !important;
-                }
+                top: 13vh;
+                left: -16vh;
             }
         }
-        &_coin5{
-            top: 5vw;
-            right: 17vw;
+
+        &_coin5 {
+            top: 11vh;
+            left: 27.4vw;
+
+            img {
+                min-width: 28vw !important;
+                max-height: 15vh;
+                object-fit: contain;
+            }
+
             @media (orientation: landscape) {
-                top: 1.2vw;
-                right: 38.2vw;
-                img{
-                    min-width: 6.5vw !important;
-                }
+                top: 13vh;
+                left: 16vh;
             }
         }
-        &_coin6{
-            top: 5vw;
-            right: 72vw;
+
+        &_coin6 {
+            top: 11vh;
+            left: -27.4vw;
             transform: translateY(-100px);
             opacity: 0;
             transition: transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.4s ease;
-            img{
-                min-width: 35vw ;
-            }
-            &_show{
+
+            &_show {
                 transform: translateY(0px);
                 opacity: 1;
             }
+
+            img {
+                min-width: 35vw !important;
+                max-height: 20vh;
+                object-fit: contain;
+            }
+
             @media (orientation: landscape) {
-                top: 1.2vw;
-                right: 52vw;
-                img{
-                    min-width: 9vw !important;
-                }
+                top: 13vh;
+                left: -16vh;
             }
         }
-        &_coin7{
-            top: 5vw;
-            right: 45vw;
+
+        &_coin7 {
+            top: 11vh;
             transform: translateY(-100px);
             opacity: 0;
             transition: transform 1.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.8s ease;
-            img{
-                min-width: 35vw ;
-            }
-            &_show{
+
+            &_show {
                 transform: translateY(0px);
                 opacity: 1;
             }
+
+            img {
+                min-width: 35vw !important;
+                max-height: 20vh;
+                object-fit: contain;
+            }
+
             @media (orientation: landscape) {
-                top: 1.2vw;
-                right: 45vw;
-                img{
-                    min-width: 9vw !important;
-                }
+                top: 13vh;
+                // left: -16vh;
             }
         }
-        &_coin8{
-            top: 5vw;
-            right: 17vw;
+
+        &_coin8 {
+            top: 11vh;
+            left: 27.4vw;
             transform: translateY(-100px);
             opacity: 0;
             transition: transform 1.8s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 1.2s ease;
-            img{
-                min-width: 35vw ;
-            }
-            &_show{
+
+            &_show {
                 transform: translateY(0px);
                 opacity: 1;
             }
+
+            img {
+                min-width: 35vw !important;
+                max-height: 20vh;
+                object-fit: contain;
+            }
+
             @media (orientation: landscape) {
-                top: 1.2vw;
-                right: 38vw;
-                img{
-                    min-width: 9vw !important;
-                }
+                top: 13vh;
+                left: 16vh;
             }
         }
-        &_coin9{
-            bottom: 17vw;
-            right: 44.5vw;
+
+        &_coin9 {
+            top: calc(10vh - 20vw);
+
+
+            img {
+                min-width: 28vw !important;
+                max-height: 15vh;
+                object-fit: contain;
+            }
+
             @media (orientation: landscape) {
-                bottom: 4vw;
-                right: 45vw;
-                img{
-                    min-width: 6.5vw !important;
-                }
+                top: 1vh;
+                // left: 16vh;
             }
         }
     }
 }
 
 
-.coin{
+
+.coin {
     transform: translateY(-100px);
     opacity: 0;
     transition: transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 1.5s ease;
-    img{
+
+    img {
         min-width: 27vw;
     }
-    &_show{
+
+    &_show {
         opacity: 1;
         transform: translateY(0px);
     }
-    &_hide{
+
+    &_hide {
         opacity: 0;
         transform: translateY(100px);
     }
 }
 
-.jackpot_hide1{
+.jackpot_hide1 {
     opacity: 1;
     transform: translateX(-35px) scale(1.4);
     transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
 }
-.jackpot_hide2{
+
+.jackpot_hide2 {
     opacity: 1;
     transform: scale(1.4);
     transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
 }
-.jackpot_hide3{
+
+.jackpot_hide3 {
     opacity: 1;
     transform: translateX(35px) scale(1.4);
     transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;

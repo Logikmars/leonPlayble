@@ -45,7 +45,7 @@ try {
         let content = fs.readFileSync(filePath, "utf-8");
 
         content = content.replace(/(["'`])\/(img\/[^"'`]+)\1/g, (_, q, rel) => {
-            return `${q}./${rel}${q}`;
+            return `${q}./assets/${rel}${q}`;
         });
 
         fs.writeFileSync(filePath, content);
