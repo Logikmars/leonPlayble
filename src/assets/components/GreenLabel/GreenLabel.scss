@@ -13,4 +13,8 @@
         background: linear-gradient(140deg, #EDD10A 0%, #AB2202 100%);
         border-radius: 8px;
     }
+    @media (orientation: landscape) {
+        font-size: 2vw;
+        min-width: 30vw;
+    }
 }
