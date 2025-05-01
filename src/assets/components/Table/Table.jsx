@@ -55,9 +55,9 @@ export default ({ click, showLastScreen }) => {
 
     return (
         <div className="Table">
-            <audio ref={sound1} src="/img/winCoin.ogg" />
-            <audio ref={sound2} src="/img/winCoin.ogg" />
-            <audio ref={sound3} src="/img/lastwin.ogg" />
+            <audio ref={sound1} src="/img/winCoin.mp3" />
+            <audio ref={sound2} src="/img/winCoin.mp3" />
+            <audio ref={sound3} src="/img/lastwin.mp3" />
             <div className="Table_decor free_img">
                 <div className='Table_decor_table free_img'>
                     <img src="/img/table.webp" alt="" />
