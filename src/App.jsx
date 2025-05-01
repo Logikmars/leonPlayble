@@ -30,11 +30,18 @@ function App() {
     }
   }, [])
 
+  function setVH() {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  window.addEventListener('resize', setVH);
+  setVH();
+
   return (
     <div className="App">
       <audio ref={audioRef} src="/img/mainSound.mp3" loop autoPlay />
       <div className="App_title transform free_img">
-        <img src="/img/title.webp" alt="" />
+        <img src="/img/mostbet.svg" alt="" />
       </div>
       <div className='App_decorBallRight transform free_img' style={showLastScreen ? { transform: 'translateX(100vw)' } : {}}>
         <img src="/img/rightJackpot.webp" alt="" />

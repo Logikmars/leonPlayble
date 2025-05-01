@@ -8,11 +8,11 @@
         z-index: 99;
 
         &_table {
-            top: 10dvh;
+            top: calc(var(--vh) * 10);
 
             img {
                 width: 90vw;
-                max-height: 45dvh;
+                max-height: calc(var(--vh) * 45);
                 object-fit: contain;
             }
 
@@ -20,13 +20,13 @@
             //     width: 90vw;
 
             //     img {
-            //         max-height: 40dvh;
+            //         max-height: calc(var(--vh) * 40);
             //     }
             // }
         }
 
         &_mount {
-            top: 11dvh;
+            top: calc(var(--vh) * 11);
             // right: 45vw;
             transition: transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 1s ease;
             transform: translateY(0);
@@ -52,18 +52,18 @@
 
         &_coin1 {
             left: -27.4vw;
-            top: calc(10dvh - 20vw);
+            top: calc(calc(var(--vh) * 10) - 20vw);
             z-index: 9;
 
             img {
                 min-width: 35vw !important;
-                max-height: 20dvh;
+                max-height: calc(var(--vh) * 20);
                 object-fit: contain;
             }
 
             @media (orientation: landscape) {
-                top: 0dvh;
-                left: -16dvh;
+                top: calc(var(--vh) * 0);
+                left: calc(var(--vh) * -16);
 
                 // bottom: 4vw;
                 // right: 51.7vw;
@@ -74,69 +74,69 @@
         }
 
         &_coin2 {
-            top: calc(10dvh - 20vw);
+            top: calc(calc(var(--vh) * 10) - 20vw);
 
             img {
                 min-width: 28vw !important;
-                max-height: 15dvh;
+                max-height: calc(var(--vh) * 15);
                 object-fit: contain;
             }
 
             @media (orientation: landscape) {
-                top: 0dvh;
+                top: calc(var(--vh) * 0);
             }
         }
 
         &_coin3 {
-            top: calc(10dvh - 20vw);
+            top: calc(calc(var(--vh) * 10) - 20vw);
             left: 27.4vw;
 
             img {
                 min-width: 28vw !important;
-                max-height: 15dvh;
+                max-height: calc(var(--vh) * 15);
                 object-fit: contain;
             }
 
             @media (orientation: landscape) {
-                top: 0dvh;
-                left: 16dvh;
+                top: calc(var(--vh) * 0);
+                left: calc(var(--vh) * 16);
             }
         }
 
         &_coin4 {
-            top: 11dvh;
+            top: calc(var(--vh) * 11);
             left: -27.4vw;
 
             img {
                 min-width: 28vw !important;
-                max-height: 15dvh;
+                max-height: calc(var(--vh) * 15);
                 object-fit: contain;
             }
 
             @media (orientation: landscape) {
-                top: 13dvh;
-                left: -16dvh;
+                top: calc(var(--vh) * 13);
+                left: calc(var(--vh) * -16);
             }
         }
 
         &_coin5 {
-            top: 11dvh;
+            top: calc(var(--vh) * 11);
             left: 27.4vw;
 
             img {
                 min-width: 28vw !important;
-                max-height: 15dvh;
+                max-height: calc(var(--vh) * 15);
                 object-fit: contain;
             }
 
             @media (orientation: landscape) {
-                top: 13dvh;
-                left: 16dvh;
+                top: calc(var(--vh) * 13);
+                left: calc(var(--vh) * 16);
             }
         }
 
         &_coin6 {
-            top: 11dvh;
+            top: calc(var(--vh) * 11);
             left: -27.4vw;
             transform: translateY(-100px);
             opacity: 0;
@@ -149,18 +149,18 @@
 
             img {
                 min-width: 35vw !important;
-                max-height: 20dvh;
+                max-height: calc(var(--vh) * 20);
                 object-fit: contain;
             }
 
             @media (orientation: landscape) {
-                top: 13dvh;
-                left: -16dvh;
+                top: calc(var(--vh) * 13);
+                left: calc(var(--vh) * -16);
             }
         }
 
         &_coin7 {
-            top: 11dvh;
+            top: calc(var(--vh) * 11);
             transform: translateY(-100px);
             opacity: 0;
             transition: transform 1.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.8s ease;
@@ -172,18 +172,18 @@
 
             img {
                 min-width: 35vw !important;
-                max-height: 20dvh;
+                max-height: calc(var(--vh) * 20);
                 object-fit: contain;
             }
 
             @media (orientation: landscape) {
-                top: 13dvh;
-                // left: -16dvh;
+                top: calc(var(--vh) * 13);
+                // left: -calc(var(--vh) * 16);
             }
         }
 
         &_coin8 {
-            top: 11dvh;
+            top: calc(var(--vh) * 11);
             left: 27.4vw;
             transform: translateY(-100px);
             opacity: 0;
@@ -196,29 +196,29 @@
 
             img {
                 min-width: 35vw !important;
-                max-height: 20dvh;
+                max-height: calc(var(--vh) * 20);
                 object-fit: contain;
             }
 
             @media (orientation: landscape) {
-                top: 13dvh;
-                left: 16dvh;
+                top: calc(var(--vh) * 13);
+                left: calc(var(--vh) * 16);
             }
         }
 
         &_coin9 {
-            top: calc(10dvh - 20vw);
+            top: calc(calc(var(--vh) * 10) - 20vw);
 
 
             img {
                 min-width: 28vw !important;
-                max-height: 15dvh;
+                max-height: calc(var(--vh) * 15);
                 object-fit: contain;
             }
 
             @media (orientation: landscape) {
-                top: 1dvh;
-                // left: 16dvh;
+                top: calc(var(--vh) * 1);
+                // left: calc(var(--vh) * 16);
             }
         }
     }
